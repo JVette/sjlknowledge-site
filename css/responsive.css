@@ -1,0 +1,109 @@
+/* ================================= 
+  Media Queries
+==================================== */
+
+/*---------LAYOUT 480px-----------*/
+
+@media screen and (min-width: 480px) {
+
+/*---------PAGE: VIDEOS & PHOTOS-----------*/ 
+
+#gallery li {
+  width: 28.3333%
+}
+
+#gallery li:nth-child(4n) {
+  clear: left;    
+}
+
+  form {
+    max-width: 480px;
+  }
+
+/*---------PAGE: ABOUT-----------*/  
+
+.profile-photo {
+  float: left;
+  margin: 0 5% 150px 0;
+}
+
+
+/*---------LAYOUT 769px-----------*/
+
+@media (min-width: 769px) {
+
+  body {
+    padding-top: 183px;
+  }
+
+  .container {
+		width: 90%;
+		margin: 0 auto;
+    float: left;
+	}
+
+  /*.wrap {
+    min-height: calc(100vh - 107px);
+    border: 1px darkblue;
+    }*/
+
+   .main-header {
+    position: fixed;
+    background: lightseagreen;
+    box-shadow: 0 1px 4px rgba(0,0,0,.4);
+    width: 100%;
+    top: 0;
+  }
+
+  .main-nav {
+    background: none;
+    float: right;
+    font-size: 1.125em;
+    margin-right: 5%;
+    text-align: right;
+    width: 45%;
+  } 
+
+	.main-nav li {
+		display: inline-block;
+		margin-left: 20px;
+	}
+
+  
+
+
+/*  .name {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    width: 45%;      
+  }
+*/
+
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  h2 {
+    font-size: 0.825em;
+    margin-bottom: 20px;
+  }
+
+}
+	
+	.container {
+		width: 60%;
+		max-width: 1150px;
+	}
+
+}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+/*---------LAYOUT 1000+px-----------*/

@@ -2,31 +2,67 @@
   Media Queries
 ==================================== */
 
-/*---------LAYOUT 480px-----------*/
+/*------------LAYOUT 260px-----------*/
+@media all and (max-width: 260px) {
 
-@media screen and (min-width: 480px) {
+	#container2 #logoBox {
+		width: 100%;
+	}
 
-/*---------PAGE: VIDEOS & PHOTOS-----------*/ 
+	#container2 #logoBox img {
+		width: 100%;
+		padding: 0 5px;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
 
-#gallery li {
-  width: 28.3333%
 }
+/*------------LAYOUT 480px-----------*/
+@media screen and (min-width: 480px) {  
 
-#gallery li:nth-child(4n) {
-  clear: left;    
-}
+body {
+    padding-top: 183px;
+  }
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+/*-PAGE: VIDEOS & PHOTOS-*/ 
+
+  #gallery li {
+    width: 28.3333%;
+  }
+
+  #gallery li:nth-child(4n) {
+    clear: left;    
+  }
 
   form {
     max-width: 480px;
   }
 
-/*---------PAGE: ABOUT-----------*/  
+/*-PAGE: ABOUT-*/  
 
-.profile-photo {
-  float: left;
-  margin: 0 5% 150px 0;
+  .welcome-photo {
+    float: left;
+    margin: 0 5% 150px 0;
+  }
 }
+	
+/*---------LAYOUT 750px-----------*/
 
+/*@media screen and (max-width: 750px) {      
+    header nav#menu ul:hover > li{
+        display:block !important;
+    }
+
+    header nav#menu ul li{
+        display:none !important;
+    }
+}*/
 
 /*---------LAYOUT 769px-----------*/
 
@@ -36,74 +72,77 @@
     padding-top: 183px;
   }
 
-  .container {
-		width: 90%;
-		margin: 0 auto;
-    float: left;
-	}
-
-  /*.wrap {
-    min-height: calc(100vh - 107px);
-    border: 1px darkblue;
-    }*/
-
-   .main-header {
+  .main-header {
     position: fixed;
-    background: lightseagreen;
     box-shadow: 0 1px 4px rgba(0,0,0,.4);
     width: 100%;
-    top: 0;
-  }
-
-  .main-nav {
-    background: none;
-    float: right;
-    font-size: 1.125em;
-    margin-right: 5%;
-    text-align: right;
-    width: 45%;
-  } 
-
-	.main-nav li {
-		display: inline-block;
-		margin-left: 20px;
-	}
-
-  
-
-
-/*  .name {
-    float: left;
-    margin-left: 5%;
-    text-align: left;
-    width: 45%;      
-  }
-*/
-
-  h1 {
-    font-size: 2.5em;
+    top: 0; 
   }
   
   h2 {
-    font-size: 0.825em;
+    font-size: 2em;
     margin-bottom: 20px;
   }
-
 }
-	
-	.container {
-		width: 60%;
-		max-width: 1150px;
+
+/*---------LAYOUT 1003px-----------*/
+
+/*@media all and (max-width: 980px)*/
+
+@media (max-width: 1003px) {
+
+	h1 {
+		display: block !important;
 	}
 
-}
+	.mainMenu {
+		position: relative;
+	}
 
-	/* ---- Float clearfix ---- */
+	#container1, header, footer {
+		width: 100%;
+	}
 
-	.clearfix::after {
-		content: " ";
-		display: table;
+	#navContainer {
+		overflow: hidden;
+		width: 100%;
+		height: 52px;
+	}
+
+	nav.mainMenu ul {
+		margin-top: 0;
+		/* -webkit-transition: transform 0.3s ease-in-out; 
+		-moz-transition: transform 0.3s ease-in-out;
+		-o-transition: transform 0.3s ease-in-out;
+		transition: transform 0.3s ease-in-out;*/
+		padding: 0;
+		width: 100%;
+		height: auto;
+		z-index: 20;
+	}
+
+	nav.mainMenu li {
+		padding: 4px 0 5px 30px;
+		/*-moz-transition: height 0.2s linear;
+		-webkit-transition: height 0.2s linear;*/
+		transition: height 0.2s linear;		
 		clear: both;
+		/*-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-o-box-sizing: border-box;*/
+		box-sizing: border-box;
+		width: 100%;
+		margin: 0 0 1px 0;
+		border-bottom: 1px solid #CDCDD7;
 	}
 
-/*---------LAYOUT 1000+px-----------*/
+	nav.mainMenu li.menutitlea, nav.mainMenu li.menutitle-firsta, nav.mainMenu li.menutitle-lasta {
+		padding-left: 24px;
+		border-left: 6px solid #395D76;
+	}
+
+	#menuBtn {
+		display: block;
+	}
+
+}
